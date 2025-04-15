@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Java",
+    "desc": "programming language"
+  },
+  {
+    "name": "Kotlin",
+    "desc": "programming language"
+  },
+  {
+    "name": "C",
+    "desc": "programming language"
+  },
+  {
+    "name": "C++",
+    "desc": "programming language"
+  },
+  {
+    "name": "Python",
+    "desc": "programming language"
+  },
+  {
+    "name": "JavaScript",
+    "desc": "programming language"
+  },
+  {
+    "name": "Go",
+    "desc": "programming language"
+  },
+  {
+    "name": "Swift",
+    "desc": "programming language"
+  },
+  {
+    "name": "Ruby",
+    "desc": "programming language"
+  },
+  {
+    "name": "PHP",
+    "desc": "programming language"
+  },
+  {
+    "name": "Rust",
+    "desc": "programming language"
+  },
+  {
+    "name": "TypeScript",
+    "desc": "programming language"
+  },
+  {
+    "name": "Dart",
+    "desc": "programming language"
+  },
+  {
+    "name": "Scala",
+    "desc": "programming language"
+  },
+  {
+    "name": "Perl",
+    "desc": "programming language"
+  },
+  {
+    "name": "Lua",
+    "desc": "programming language"
+  },
+  {
+    "name": "Haskell",
+    "desc": "programming language"
+  },
+  {
+    "name": "Assembly",
+    "desc": "programming language"
+  },
+  {
+    "name": "R",
+    "desc": "programming language"
+  },
+  {
+    "name": "SQL",
+    "desc": "query language"
+  }
+]
