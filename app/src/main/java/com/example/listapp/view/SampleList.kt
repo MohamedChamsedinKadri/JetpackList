@@ -67,7 +67,7 @@ fun SampleList(navController: NavController) {
             )
         }
         LazyColumn(modifier = Modifier.padding(10.dp)) {
-            items(sampleData) { data -> // Use items(sampleData) for LazyColumn
+            items(sampleData) { data ->
                 SampleDataListItem(data, navController)
             }
         }
@@ -84,7 +84,7 @@ fun SampleDataListItem(data: SampleData, navController: NavController) {
             }
             .padding(10.dp)
             .fillMaxWidth(),
-        elevation = CardDefaults.cardElevation(defaultElevation = 5.dp), // Corrected line
+        elevation = CardDefaults.cardElevation(defaultElevation = 5.dp),
         shape = RoundedCornerShape(5.dp)
     ) {
         Row(horizontalArrangement = Arrangement.Center, modifier = Modifier.fillMaxWidth()) {
