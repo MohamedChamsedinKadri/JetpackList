@@ -1,5 +1,6 @@
 package com.example.listapp
 
+import android.net.Uri
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -49,9 +50,14 @@ fun NavigatePage() {
         ) { navBackStackEntry ->
             val json = navBackStackEntry.arguments?.getString("item")
             json?.let {
-                val item = Gson().fromJson(it, SampleData::class.java)
+                val decodedJson = Uri.decode(it)
+                val item = Gson().fromJson(decodedJson, SampleData::class.java)
                 SampleDataDetails(data = item)
             }
+
         }
     }
 }
+
+
+

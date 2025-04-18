@@ -1,6 +1,7 @@
 package com.example.listapp.view
 
 import android.content.Context
+import android.net.Uri
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -79,8 +80,9 @@ fun SampleDataListItem(data: SampleData, navController: NavController) {
     Card(
         modifier = Modifier
             .clickable {
-                val itemVal = Gson().toJson(data)
-                navController.navigate("sample_detail/${itemVal}")
+                val itemVal = Uri.encode(Gson().toJson(data))
+                navController.navigate("detail_page/$itemVal")
+
             }
             .padding(10.dp)
             .fillMaxWidth(),
@@ -108,3 +110,4 @@ fun SampleDataListItem(data: SampleData, navController: NavController) {
 fun getJsonDataFromAsset(context: Context, data: String): String {
     return context.assets.open(data).bufferedReader().use { it.readText() }
 }
+
